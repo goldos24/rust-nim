@@ -1,0 +1,15 @@
+{
+"outputFile": "/home/lasse/prj/rust-nim/src/nom",
+"compile":[
+["/home/lasse/prj/rust-nim/src/stdlib_io.nim.c", "gcc -c  -w -fmax-errors=3 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -D_FORTIFY_SOURCE=2   -I/usr/lib/nim -I/home/lasse/prj/rust-nim/src -o /home/lasse/prj/rust-nim/src/stdlib_io.nim.c.o /home/lasse/prj/rust-nim/src/stdlib_io.nim.c"],
+["/home/lasse/prj/rust-nim/src/stdlib_system.nim.c", "gcc -c  -w -fmax-errors=3 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -D_FORTIFY_SOURCE=2   -I/usr/lib/nim -I/home/lasse/prj/rust-nim/src -o /home/lasse/prj/rust-nim/src/stdlib_system.nim.c.o /home/lasse/prj/rust-nim/src/stdlib_system.nim.c"],
+["/home/lasse/prj/rust-nim/src/@mnom.nim.c", "gcc -c  -w -fmax-errors=3 -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -D_FORTIFY_SOURCE=2   -I/usr/lib/nim -I/home/lasse/prj/rust-nim/src -o /home/lasse/prj/rust-nim/src/@mnom.nim.c.o /home/lasse/prj/rust-nim/src/@mnom.nim.c"]],
+"link":[
+"/home/lasse/prj/rust-nim/src/stdlib_io.nim.c.o",
+"/home/lasse/prj/rust-nim/src/stdlib_system.nim.c.o",
+"/home/lasse/prj/rust-nim/src/@mnom.nim.c.o"
+],
+"linkcmd": "gcc   -o /home/lasse/prj/rust-nim/src/nom  /home/lasse/prj/rust-nim/src/stdlib_io.nim.c.o /home/lasse/prj/rust-nim/src/stdlib_system.nim.c.o /home/lasse/prj/rust-nim/src/@mnom.nim.c.o    -ldl -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now",
+"extraCmds": [],
+"stdinInput": false
+}
